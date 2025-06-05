@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class ReloadGame : MonoBehaviour
 
-    private GUIStyle promptStyle;
-
+        // Initialize style for the reload hint text. Avoid using
+        // GUI skin properties outside of OnGUI to prevent runtime errors.
+        promptStyle = new GUIStyle
     void Start()
     {
         // Initialize style for the reload hint text
