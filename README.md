@@ -1,8 +1,26 @@
-# Exam-project
+# Penguin Jump
 
 ## Overview
 
 This project is a 2D vertical platformer game developed in Unity. It showcases gameplay mechanics such as movement, power ups, and weapon use, and was created as part of an exam project.
+
+## 🐧 Play in the Browser — Rebuilt Edition
+
+The game has been rebuilt from scratch as a single self-contained HTML5 file: **[`docs/index.html`](docs/index.html)**. No Unity, no build step, no assets to download — just open the file in any modern browser (double-click it, or serve the repo and visit `/docs/`). To host it online, enable GitHub Pages for this repository (Settings → Pages → Deploy from branch → `/docs` folder).
+
+The remake keeps the original's design — climb procedurally generated platforms, grab power-ups, dodge or shoot monsters, and stay ahead of the rising lava — and improves on it:
+
+- **Better jump feel** — coyote time, jump buffering, and variable jump height replace the original's "press the space bar harder and longer" workaround
+- **Fair generation** — every platform is mathematically guaranteed to be reachable, including moving platforms at their travel extremes
+- **Stomp attack** — land on monsters to defeat them (in addition to throwing snowballs with <kbd>E</kbd>)
+- **Invulnerability frames** after taking damage, instead of monsters self-destructing on first contact
+- **High score** persisted in the browser, pause menu, auto-pause when the tab loses focus
+- **Procedural audio** (WebAudio) with a mute toggle — no sound files needed
+- **Altitude-reactive sky** — day fades through dusk into a starfield as you climb, with parallax glacial mountains and snowfall
+- **Touch controls** on mobile devices
+- All five platform types (static, disappearing, crumbling, and both movers), all four power-ups (trampoline, wings, double jump, extra life), rising lava with score-based speed-up, hearts UI, and the grayscale game-over fade — faithfully recreated
+
+**Controls:** ← → / A D to move · Space / W / ↑ to jump · E to throw snowballs · P to pause · M to mute
 
 ## Features
 
@@ -21,7 +39,7 @@ Follow the instructions here: [GitHub - Installing Git Large File Storage](https
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/lea10k/Exam-project.git
+    git clone https://github.com/guischmid/Penguin_Jump.git
     ```
 2. Open the project in [Unity Editor](https://unity.com/).
 3. Select the MainMenu scene at Assets/Scenes.
